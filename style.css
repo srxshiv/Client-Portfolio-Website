@@ -1,19 +1,33 @@
 /* GENERAL */ 
 
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 * {
     padding: 0;
     margin: 0;
+    
 }
-
+.logo{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.logo:hover{
+  cursor: default;
+}
+#Divyansh{
+  font-weight: 700;
+}
+#Singh{
+  font-weight: 300;
+}
 html{
     scroll-behavior: smooth;
 }
 
 body{
-  background-color: white;
-    font-family: 'Poppins', sans-serif;
+  background-color: #E4F1FF;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
 }
 
 p{
@@ -44,39 +58,240 @@ nav{
     font-size: 1.5rem;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+   color: #27005D;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #27005D;
+}
+
 a{
-    color: black;
-    text-decoration: none;
-    display: block;
-    position: relative;
-    padding: 0.2em 0;
+  color: black;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
 }
 
 a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.1em;
-  background-color: #27005D;
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 0.1em;
+background-color: #27005D;
+opacity: 0;
+transition: opacity 300ms, transform 300ms;
 }
 
 a:hover{
-  color: #27005D;
+color: #27005D;
 }
 a {
-  overflow: hidden;
+overflow: hidden;
 }
 
 a::after {
-  opacity: 1;
-  transform: translate3d(-100%, 0, 0);
+opacity: 1;
+transform: translate3d(-100%, 0, 0);
 }
 
 a:hover::after,
 a:focus::after{
-  transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+
+
+/* HAMBURGER NAV */
+
+#hamburger-nav{
+  display: none;
+}
+
+.hamburger-menu{
+  position: relative;
+  display: inline-block ;
+}
+
+.hamburger-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span{
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition:all 0.3 ease-in-out ;
+}
+
+.menu-links{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color:#E4F1FF;
+  width: fit-content;
+  max-height: 0; 
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a{
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li{
+  list-style: none;
+}
+
+.menu-links.open{
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+section{
+  padding: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container{
+  display: flex;
+}
+
+/* PROflIE */
+
+#profile{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container{
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text{
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p{
+  font-weight: 600;
+}
+
+.section__text__p1{
+  text-align: center;
+}
+
+.section__text__p2{
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title{
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* icons */
+.icon{
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTON */
+
+.btn-container{
+  display: flex;
+  gap: 1rem;
+  justify-content: center; 
+}
+
+.btn{
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  margin: 1rem 0;
+}
+
+.btn-color-1,.btn-color-2{
+  border:#27005D 0.1rem solid;
+}
+
+.btn-color-1:hover , .btn-color-2:hover{
+  cursor: pointer;
+}
+
+.btn-color-1:hover ,.btn-color-2{
+  background: #9400FF;
+  color: #E4F1FF;
+}
+
+.btn-color-2:hover{
+  background: #27005D;
+}
+
+.btn-color-1{
+  background: none;
+}
+
+.btn-color-1:hover{
+border: #E4F1FF 0.1rem solid;
 }
