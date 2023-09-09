@@ -21,7 +21,7 @@
   font-weight: 300;
 }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -254,7 +254,7 @@ section{
   height: 2rem;
 }
 
-/* BUTON */
+/* BUTTON */
 
 .btn-container{
   display: flex;
@@ -295,3 +295,174 @@ section{
 .btn-color-1:hover{
 border: #E4F1FF 0.1rem solid;
 }
+
+/* ABOUT ME */
+li{
+  list-style-type: none;
+}
+
+#about{
+  position: relative;
+}
+
+.about-containers{
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container{
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers, .about-details-container{
+  display: flex;
+}
+
+.about-pic{
+  border-radius: 2rem;
+}
+
+.arrow{
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container{
+  text-align: center;
+  padding: 1.5rem;
+  flex: 1;
+  background:#E4F1FF;
+  border-radius: 2rem;
+  border: #27005D 0.1rem solid;
+  border-color:#27005D;
+}
+
+.section-container{
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container{
+  height: 400px;
+  width:  400px;
+  margin: auto 0;
+}
+
+.text-container{
+  text-align: center;
+}
+
+/* EXPERIENCEE */
+
+#experience{
+  position: relative;
+}
+
+.experience-sub-title{
+  color:#9400FF;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container{
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article{
+  display: flex;
+  width: 10rem;
+  gap: 0.5rem;
+}
+
+article .icon{
+  cursor: default;
+}
+
+/* PROJECTSS */
+
+#projects{
+  position: relative;
+}
+
+.color-container{
+  border-color:#27005D;
+  background: #E4F1FF;
+}
+
+.project-img{
+  border-radius: 2rem;
+  height: 90%;
+  width: 90%;
+}
+
+.project-title{
+  margin: 1rem;
+  color: #27005D;
+}
+
+.project-btn{
+  color: #27005D;
+  border-color: #27005D;
+}
+
+/* .project-wrap{
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* CONTACT */
+
+#contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container{
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: #27005D 0.1rem solid;
+  border-color: #9400FF;
+  background: #E4F1FF;
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p{
+  font-size: larger;
+}
+
+.contact-icon{
+  cursor: default;
+}
+
+.email-icon{
+  height: 2.5rem;
+}
+
+/* fooooter */
