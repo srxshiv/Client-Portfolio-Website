@@ -254,6 +254,10 @@ section{
   height: 2rem;
 }
 
+.profile-icon:hover{
+  transform: scale(130%);
+}
+
 /* BUTTON */
 
 .btn-container{
@@ -372,6 +376,7 @@ li{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 }
 
 .article-container{
@@ -404,6 +409,12 @@ article .icon{
   background: #E4F1FF;
 }
 
+.color-container:hover{
+  transform: scale(105%);
+  /* transform: translateY(-7px);
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.08); */
+}
+
 .project-img{
   border-radius: 2rem;
   height: 90%;
@@ -420,9 +431,10 @@ article .icon{
   border-color: #27005D;
 }
 
-/* .project-wrap{
+/* .project-wrap:hove{
   display: flex;
   flex-wrap: wrap;
+  
 } */
 
 /* CONTACT */
