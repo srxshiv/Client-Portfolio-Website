@@ -100,13 +100,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-   color: #EC53B0;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: #EC53B0;
-}
-
 a{
   color: black;
   text-decoration: none;
