@@ -30,7 +30,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  border-left: 2px solid #404040 ;
+  border-left: 2px solid #EC53B0 ;
   animation: animate 4s steps(12) infinite;
 }
 
@@ -56,6 +56,7 @@
 }
 #Singh{
   font-weight: 300;
+  color: #EC53B0;
 }
 html{
     scroll-behavior:smooth;
@@ -63,12 +64,11 @@ html{
 
 body{
   background-color: white;
-  background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
 }
 
 p{
-    color: #7f7f7f;
+    color: #EC53B0;
 }
 
 /* TRANSITION */
@@ -101,10 +101,10 @@ a {
 }
 
 a:hover {
-   color: #7f7f7f;
+   color: #EC53B0;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: #7f7f7f;
+  text-decoration-color: #EC53B0;
 }
 
 a{
@@ -122,13 +122,13 @@ bottom: 0;
 left: 0;
 width: 100%;
 height: 0.1em;
-background-color: #7f7f7f;
+background-color: #EC53B0;
 opacity: 0;
 transition: opacity 300ms, transform 300ms;
 }
 
 a:hover{
-color: #7f7f7f;
+color: #EC53B0;
 }
 a {
 overflow: hidden;
@@ -345,6 +345,10 @@ li{
 
 #about{
   position: relative;
+}
+
+.about-p-text{
+  color: #7f7f7f;
 }
 
 .about-containers{
