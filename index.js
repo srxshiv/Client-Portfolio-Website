@@ -8,7 +8,7 @@ function toggleMenu() {
   const text= document.querySelector(".text-2");
   const textLoad=() =>{
     setTimeout(()=>{
-      text.textContent="Software Developer"
+      text.textContent="NLP Researcher"
     }, 0);
     setTimeout(()=>{
       text.textContent="Data Scientist"

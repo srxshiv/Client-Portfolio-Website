@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Divyansh Singh</title>
+    <script src="https://kit.fontawesome.com/7044dfeb68.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
       <div class="logo"><span id="Divyansh">D</span><span id="Singh">S</span></div>
-      <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -19,9 +19,13 @@
           <li><a href="#contact">Contact</a></li>
         </ul> 
       </div>
+      <div><i class="fa-regular fa-sun fa-2xl tooltip" style="color: #ebebeb;"><p class="tooltiptext">Lumos!</p></i>
+      </div>
     </nav>
     <nav id="hamburger-nav">
       <div class="logo"><span id="Divyansh">D</span><span id="Singh">S</span></div>
+      <div><i class="fa-regular fa-sun fa-2xl tooltip" style="color: #ebebeb;"><p class="tooltiptext">Lumos!</p></i>
+      </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -51,9 +55,8 @@
           <button class="btn btn-color-2" onclick="location.href='#contact'">Contact Info</button>
         </div>
         <div id="socials-container">
-          <img src="./images/linkedin.png" alt="My linkedin profile" class="icon profile-icon" onclick="window.open('https:/www.linkedin.com/in/divyansh-singh-604/')">
-          <img src="./images/github.png" alt="My Github profile" class="icon profile-icon" onclick="window.open('https:/www.github.com/divyanshrm')">
-          <img src="./images/leetcode.png" alt="My Leetcode profile" class="icon profile-icon" onclick="window.open('https:/leetcode.com/anshis13/')">
+          <i class="fa-brands fa-linkedin fa-2xl profile-icon" onclick="window.open('https:/www.linkedin.com/in/divyansh-singh-604/')" ></i>
+          <i class="fa-brands fa-github fa-2xl profile-icon" onclick="window.open('https:/www.github.com/divyanshrm')"></i>
         </div>
       </div>
     </section>
@@ -67,12 +70,12 @@
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img src="./images/experience.png" alt="experience icon" class="icon">
+              <i class="fa-solid fa-award fa-2xl icon" style="color: #fec700;"></i>
               <h3>Experience</h3>
                <p class="about-p-text">4+ Interships and jobs</p> 
             </div>
             <div class="details-container">
-              <img src="./images/education.png" alt="education icon" class="icon">
+              <i class="fa-solid fa-user-graduate fa-2xl icon" style="color: #fec700;"></i>
               <h3>Education</h3>
               <ul>
                 <li>
@@ -89,133 +92,160 @@
           </div>
         </div>
       </div>
-      <img src="./images/arrow.png" alt="next section icon" class="icon arrow" onclick="location.href='#experience'">
+      <i class="fa-solid fa-angles-down fa-xl arrow" style="color: #00a3d7;" onclick="location.href='#experience'"></i>
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
+          <div class="work-history">
+
+            <div class="experience-history-container">
+              <input id="ca" type="checkbox">
+              <div class="exp-title">
+                <h4>University of Florida</h4><span>Gainesville,FL,USA</span>
+              </div>
+              <h5><em>Research Assistant</em></h5>
+              <div class="exp-content">
+                <ul>
+                  <li>Working in Prof. Bonnie Dorr's Natural Language Processing lab: Leading the Topic Modelling Portion in the ARLIS Information Competition Simulation project, using clustered BERT Embeddings to detect topics in over 10,000 un-annotated documents and achieving a cosine similarity of 0.72 compared to ground truth.</li>
+                  <li>ARLIS Information Competition Simulation: This project aims to develop a simulated population that replicates the dissemination of information among various actors and individuals.</li>
+                  <li>Deploying open source large language models (LLMs): Researching and deploying LLMs including LLAMA 2, Falcon 40B etc. And using them for NLP tasks like Machine Translation and Topic Detection.</li>
+                </ul>
+                <label for="ca">Hide</label>
+              </div>
+              <label for="ca">View More</label>
+            </div>
+
+            <div class="experience-history-container">
+              <input type="checkbox" id="cb">
+              <div class="exp-title">
+                <h4>ZS</h4><span>Remote</span>
+              </div>
+              <h5><em>Decison Analytics Associate (Internship)</em></h5>
+              <div class="exp-content">
+                <ul>
+                  <li>Raw Patient Level and Physician level Claims data: Prepared analytics reports related to market share, tracking patient’s treatment journey using their claims data. Compiled data from 6 retail claims datasets from Hive databases.</li>
+                  <li>Physician Deciling for Promotions: Identified 500 high decile physicians and territories using diagnosis statistics across the United States and recommended them for promotions.</li>
+                  <li>Weekly Report of New Patients: Prepared an automated pipeline to identify new patients each week (AML) and their physicians for sending out biopsy reminders using their Diagnosis Statistics. Increased Biopsies count by 23 percent.</li>
+                </ul>
+                <label for="cb">Hide</label>
+              </div>
+              <label for="cb">View More</label>
+            </div>
+
+            <div class="experience-history-container">
+              <input type="checkbox" id="cc">
+              <div class="exp-title">
+                <h4>The LNM Institute of Information Technology</h4><span>Remote</span>
+              </div>
+              <h5><em>Research Assistant</em></h5>
+              <div class="exp-content">
+                <ul>
+                  <li>Computer Vision based Exam Proctoring System: Worked under Prof. Miller and developed an AI powered proctoring system for online exams using Computer Vision for over 2,000 Students.</li>
+                  <li>Inference System for Efficient Proctoring from Multiple Data Feeds: Developed the Proctoring system to monitor the camera feed and audio which performed Face Authentication, Phone Detection, Spoofing, Speech to text using Opencv, Dlib, YOLOv3, Darknet. Also deployed multi-threading for optimized usage of cloud computing.</li>
+                </ul>
+                <label for="cc">Hide</label>
+              </div>
+              <label for="cc">View More</label>
+            </div>
+
+            <div class="experience-history-container">
+              <input type="checkbox" id="cd">
+              <div class="exp-title">
+                <h4>Indian Institute of Technology</h4><span>Remote</span>
+              </div>
+              <h5><em>Research Intern</em></h5>
+              <div class="exp-content">
+                <ul>
+                  <li>Aggregated a dataset of about 1,250,000 samples containing hate speech.: Scraped tweets and comments containing hate speech from twitter, Reddit data. Collected a labeled dataset, having data points from over 10,000 web pages.</li>
+                  <li>Building a Classifier to Identify Hate Speech in Online Text Streams: Worked on a multiclass classifier using BERT,ELECTRA encoding architectures and ensembling the baselines. Used transformers based models with a testing accuracy of 98 percent.</li>
+                </ul>
+                <label for="cd">Hide</label>
+              </div>
+              <label for="cd">View more</label>
+            </div>
+
+          </div>
+          
           <div class="details-container">
             <h2 class="experience-sub-title">Skills</h2>
             <div class="article-container">
               <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                <img src="./images/java.png" alt="experience icon" class="icon">
                <div>
                  <h3>JAVA</h3>
-                 <p class="about-p-text">Experienced</p>
                </div>
               </article>
               <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                <img src="./images/python.png" alt="experience icon" class="icon">
                <div>
                  <h3>Python</h3>
-                 <p class="about-p-text">Experienced</p>
                </div>
               </article>
               <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                <img src="./images/tensor-flow.png" alt="experience icon" class="icon">
                <div>
-                 <h3>HTML/CSS</h3>
-                 <p class="about-p-text">Intermediate</p>
+                 <h3>Tensorflow</h3>
                </div>
               </article>
               <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                <img src="./images/PyTorch.png" alt="experience icon" class="icon">
+               <div>
+                 <h3>Torch</h3>
+               </div>
+              </article>
+              <article>
+                <img src="./images/css.png" alt="experience icon" class="icon">
+               <div>
+                 <h3>CSS</h3>
+               </div>
+              </article>
+              <article>
+                <img src="./images/javascript.png" alt="experience icon" class="icon">
                <div>
                  <h3>Javascript</h3>
-                 <p class="about-p-text">Experienced</p>
                </div>
               </article>
               <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                <img src="./images/react.png" alt="experience icon" class="icon">
                <div>
                  <h3>React</h3>
-                 <p class="about-p-text">Experienced</p>
                </div>
               </article>
               <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                <img src="./images/mysql.png" alt="experience icon" class="icon">
                <div>
-                 <h3>MongoDB/SQL</h3>
-                 <p class="about-p-text">Experienced</p>
+                 <h3>MySQL</h3>
                </div>
               </article>
               <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                <img src="./images/django.png" alt="experience icon" class="icon">
                <div>
                  <h3>Django</h3>
-                 <p class="about-p-text">Experienced</p>
                </div>
               </article>
               <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                <img src="./images/cpp.png" alt="experience icon" class="icon">
                <div>
-                 <h3>C/C++</h3>
-                 <p class="about-p-text">Experienced</p>
+                 <h3>C++</h3>
                </div>
               </article>
               <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                <img src="./images/bash.png" alt="experience icon" class="icon">
                <div>
                  <h3>Bash</h3>
-                 <p class="about-p-text">Experienced</p>
-               </div>
-              </article>
-
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Specializations</h2>
-            <div class="article-container">
-              <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
-               <div>
-                 <h3>Software Development</h3>
-               </div>
-              </article>
-              <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
-               <div>
-                 <h3>Data Science</h3>
-               </div>
-              </article>
-              <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
-               <div>
-                 <h3>Machine Learning</h3>
-               </div>
-              </article>
-              <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
-               <div>
-                 <h3>Networking</h3>
-               </div>
-              </article>
-              <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
-               <div>
-                 <h3>Business Analytics</h3>
-               </div>
-              </article>
-              <article>
-                <img src="./images/checkmark.png" alt="experience icon" class="icon">
-               <div>
-                 <h3>Web Development</h3>
                </div>
               </article>
             </div>
           </div>
-        </div>
-      </div>
-      <img src="./images/arrow.png" alt="next section icon" class="icon arrow" onclick="location.href='#projects'">
+      <i class="fa-solid fa-angles-down fa-xl arrow" style="color: #00a3d7;" onclick="location.href='#projects'"></i>
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers project-wrap">
-        <div class="details-container color-container">
+        <div class="details-container color-container project-border">
           <div class="article-container">
             <img src="./images/project-1.png" alt="Project 1" class="project-img">
           </div>
@@ -225,17 +255,17 @@
             <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
           </div>
         </div>
-        <div class="details-container color-container">
+        <div class="details-container color-container project-border">
           <div class="article-container">
             <img src="./images/project-1.png" alt="Project 1" class="project-img">
           </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
+          <h2 class="experience-sub-title project-title ">Project One</h2>
           <div class="btn-container">
             <button class="btn btn-color-1 project-btn" onclick="location.href=''">Github</button>
             <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
           </div>
         </div>
-        <div class="details-container color-container">
+        <div class="details-container color-container project-border">
           <div class="article-container">
             <img src="./images/project-1.png" alt="Project 1" class="project-img">
           </div>
@@ -247,19 +277,19 @@
         </div>
       </div>
     </div>
-      <img src="./images/arrow.png" alt="next section icon" class="icon arrow" onclick="location.href='#contact'">
+    <i class="fa-solid fa-angles-down fa-xl arrow" style="color: #00a3d7;" onclick="location.href='#contact'"></i>
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img src="./images/email.png" alt="email icon" class="icon contact-icon email-icon">
-          <p><a href="mailto:divyanshucs127@gmail.com">divyanshucs127@gmail.com</a></p>
+          <i class="fa-solid fa-envelope fa-xl email-icon" style="color: #8DCBE6;"></i>
+          <p><a class="contact-text" href="mailto:divyanshucs127@gmail.com">divyanshucs127@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
-          <img src="./images/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-          <p><a href="https://linkedin.com/in/divyansh-singh-604">linkedin</a></p>
+          <i class="fa-brands fa-linkedin fa-xl" style="color: #8DCBE6;"></i>
+          <p><a class="contact-text" href="https://linkedin.com/in/divyansh-singh-604">linkedin</a></p>
         </div>
       </div>
     </section>
