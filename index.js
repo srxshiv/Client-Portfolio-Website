@@ -1,3 +1,5 @@
+
+// ham nav ka 
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
@@ -5,6 +7,7 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
+  // typing animation ka 
   const text= document.querySelector(".text-2");
   const textLoad=() =>{
     setTimeout(()=>{
@@ -20,4 +23,21 @@ function toggleMenu() {
 
   textLoad();
   setInterval(textLoad,12000);
+
+  // contact form ka
+
+  function sendEmail(){
+    
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "divyanshucs127@gmail.com",
+        Password : "Vaishnavi@1234",
+        To : 'divyanshucs127@gmail.com',
+        From : document.getElementById.apply("contact-email").value,
+        Subject : "Website Contact Form Inquiry",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+  }
   

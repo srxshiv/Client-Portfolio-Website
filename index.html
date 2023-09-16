@@ -310,19 +310,28 @@
     <i class="fa-solid fa-angles-down fa-xl arrow" style="color: #00a3d7;" onclick="location.href='#contact'"></i>
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+
+      <div class="contact-form-container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <h3>Get in touch</h3>
+          <input type="text" id="contact-name" placeholder="Your name" required>
+          <input type="email" id="contact-email" placeholder="Email id" required>
+          <input type="text" id="contact-phone" placeholder="Phone no.">
+          <textarea id="contact-msg" rows="4" placeholder="How may I help you?"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <i class="fa-solid fa-envelope fa-xl email-icon" style="color: #8DCBE6;"></i>
+          <i class="fa-solid fa-envelope fa-xl email-icon" style="color: #7f7f7f;"></i>
           <p><a class="contact-text" href="mailto:divyanshucs127@gmail.com">divyanshucs127@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
-          <i class="fa-brands fa-linkedin fa-xl" style="color: #8DCBE6;"></i>
+          <i class="fa-brands fa-linkedin fa-xl" style="color: #7f7f7f;"></i>
           <p><a class="contact-text" href="https://linkedin.com/in/divyansh-singh-604">linkedin</a></p>
         </div>
-      </div>
-      <div class="contact-form-container">
       </div>
     </section>
     <footer>
@@ -338,6 +347,7 @@
       </nav>
       <p>Copyight &#169; 2022 Divyansh Singh. All rights reserved.</p>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
