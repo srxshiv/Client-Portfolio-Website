@@ -2,6 +2,7 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600:700&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -11,7 +12,8 @@
 body{
   background-color: #1F1F1F;
   /* font-family: 'Poppins', sans-serif; */
-  font-family: 'Fredoka', sans-serif;
+  /* font-family: 'Fredoka', sans-serif; */
+  font-family: 'Oswald', sans-serif;
 }
 
 /* typing texttt */
@@ -220,7 +222,7 @@ a:hover::before {
 
 section{
   padding: 4vh;
-  min-height: 96vh;
+  min-height: 100vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -244,6 +246,29 @@ section{
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.profile-pic{
+  /* background-repeat: no-repeat; */
+  justify-self: center;
+  height: 350px;
+  width: 350px;
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 /30%);
+  animation: profile_animate 8s ease-in-out infinite;
+}
+
+@keyframes profile_animate{
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 
 .section__text{
@@ -338,7 +363,7 @@ section{
 }
 
 .btn-color-1,.btn-color-2{
-  border: #FB2576 0.1rem solid;
+  border: #7f7f7f 0.1rem solid;
 }
 
 .btn-color-1:hover , .btn-color-2:hover{
@@ -346,12 +371,12 @@ section{
 }
 
 .btn-color-1:hover ,.btn-color-2{
-  background: #2CD3E1;
+  background: #FFA41B;
   color: white;
 }
 
 .btn-color-2:hover{
-  background: #39B5E0;
+  background: #FFBB5C;
 }
 
 .btn-color-1{
@@ -370,6 +395,7 @@ li{
 
 #about{
   position: relative;
+  padding-bottom: 20vh;
 }
 
 .about-p-text{
@@ -586,6 +612,11 @@ label{
 
 .project-border{
   border-image-source: linear-gradient(to left, #B6EADA,#0079FF);
+}
+
+.project-wrap{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
