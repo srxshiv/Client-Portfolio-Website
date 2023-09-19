@@ -41,7 +41,7 @@
     .section__pic-container {
       width: 275px;
       height: 275px;
-      margin: 0 auto 2rem;
+      margin: 0 auto 4rem;
     }
     .about-containers {
       margin-top: 0;
@@ -59,7 +59,7 @@
       height: 40vh;
     }
     #profile {
-      height: 83vh;
+      min-height: 120vh;
       margin-bottom: 0;
     }
     article {
@@ -84,8 +84,11 @@
     .experience-sub-title {
       font-size: 1.25rem;
     }
-    .logo {
-      font-size: 1.5rem;
+    .logo-img{
+      width: 200px;
+    }
+    .tooltip{
+      margin-right: 72px;
     }
     .nav-links {
       flex-direction: column;
@@ -94,7 +97,7 @@
     }
     .section__pic-container {
       width: auto;
-      height: 46vw;
+      height: 75vw;
       justify-content: center;
     }
     .section__text__p2 {

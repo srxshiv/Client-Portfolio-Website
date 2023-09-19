@@ -53,13 +53,11 @@ body{
 }
 
 /* typing text end */
-.logo{
-  color: #183D3D;
-  font-size: 2rem;
-  font-weight: 500;
+.logo-img{
+  display: flex;
+  height: auto;
+  width: 300px;
 }
-
-
 
 .logo:hover{
   cursor: default;
@@ -99,9 +97,13 @@ nav, .nav-links{
 }
 
 nav{
-    justify-content: space-around;
+    justify-content:space-evenly;
     align-items: center;
     height: 17vh;
+}
+
+.tooltip{
+  margin: 7vw;
 }
 
 .nav-links{
@@ -148,6 +150,7 @@ a:hover::before {
 .hamburger-menu{
   position: relative;
   display: inline-block ;
+  padding: 5vw;
 }
 
 .hamburger-icon{
@@ -308,6 +311,7 @@ section{
 }
 
 /* icons */
+
 
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -485,6 +489,12 @@ li{
 
 .exp-cont{
   gap: 2rem;
+}
+
+.skills-container{
+  border-image: linear-gradient(#EC53B0, #0E21A0) 30;
+  border-width: 4px;
+  border-style: solid;
 }
 
 article{
@@ -678,6 +688,7 @@ form input, form textarea{
   border-radius: 2rem;
   background-color: #f5f5f5;
   font-size: 16px;
+  border: #7f7f7f 2px solid;
 }
 
 form button{

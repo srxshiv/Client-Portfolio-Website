@@ -7,11 +7,12 @@
     <title>Divyansh Singh</title>
     <script src="https://kit.fontawesome.com/7044dfeb68.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo-img"><img src="./images/logo-no-background.png" alt="DS logo"></div>
+      <img src="./images/logo-no-background.png" alt="DS logo" class="logo-img">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -23,7 +24,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo"><span id="Divyansh">D</span><span id="Singh">S</span></div>
+      <img src="./images/logo-no-background.png" alt="DS logo" class="logo-img">
       <div><i class="fa-regular fa-sun fa-2xl tooltip" style="color: #ebebeb;"><p class="tooltiptext">Lumos!</p></i>
       </div>
       <div class="hamburger-menu">
@@ -44,7 +45,7 @@
       <div class="section__pic-container">
         <img src="./images/profile-pic.jpg" alt="profile_icon" class="profile-pic">
       </div>
-      <div class="section__text">
+      <div class="section__text" data-aos="fade-left">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Divyansh Singh</h1>
         <div class="typing-text">
@@ -64,10 +65,10 @@
       <p class="section__text__p1">Get to know Me.</p>
       <h1 class="title">About me.</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <div class="section__pic-container" data-aos="fade-up">
           <img src="./images/about-pic.png" alt="About_me_pic" class="about-pic">
         </div>
-        <div class="about-details-container">
+        <div class="about-details-container" data-aos="fade-up">
           <div class="about-containers">
             <div class="details-container">
               <i class="fa-solid fa-award fa-2xl icon" style="color: #fec700;"></i>
@@ -99,7 +100,7 @@
       <h1 class="title">Experience</h1>
           <div class="work-history">
 
-            <label for="ca">
+            <label for="ca" data-aos="zoom-in">
             <div class="experience-history-container">
               <input id="ca" type="checkbox">
               <div class="exp-title">
@@ -116,7 +117,7 @@
             </div>
             </label>
 
-            <label for="cb">
+            <label for="cb" data-aos="zoom-in">
             <div class="experience-history-container">
               <input type="checkbox" id="cb">
               <div class="exp-title">
@@ -133,7 +134,7 @@
             </div>
             </label>
 
-           <label for="cc">
+           <label for="cc" data-aos="zoom-in">
             <div class="experience-history-container">
               <input type="checkbox" id="cc">
               <div class="exp-title">
@@ -149,7 +150,7 @@
             </div>
             </label>
 
-            <label for="cd">
+            <label for="cd" data-aos="zoom-in">
             <div class="experience-history-container">
               <input type="checkbox" id="cd">
               <div class="exp-title">
@@ -167,7 +168,7 @@
 
           </div>
 
-          <div class="details-container">
+          <div class="details-container skills-container" data-aos="zoom-in">
             <h2 class="experience-sub-title">Skills</h2>
             <div class="article-container">
               <article>
@@ -245,17 +246,20 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers project-wrap">
-        <div class="details-container color-container project-border">
+        <div class="details-container color-container project-border" data-aos="zoom-in">
           <div class="article-container">
             <img src="./images/project-1.png" alt="Project 1" class="project-img">
           </div>
           <h2 class="experience-sub-title project-title">CareerGPT</h2>
+          <div>
+            <p>CareerGPT is an AI-driven platform designed to empower users on their career paths.</p>
+          </div>
           <div class="btn-container">
-            <button class="btn btn-color-1 project-btn" onclick="location.href='https:/devpost.com/software/careergpt?ref_content=user-portfolio&ref_feature=in_progress'">Project</button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https:/github.com/divyanshrm/CareerGPT-Shellhacks'">Github</button>
+            <button class="btn btn-color-1 project-btn" onclick="window.open('https:/devpost.com/software/careergpt?ref_content=user-portfolio&ref_feature=in_progress')">Project</button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https:/github.com/divyanshrm/CareerGPT-Shellhacks')">Github</button>
           </div>
         </div>
-        <div class="details-container color-container project-border">
+        <div class="details-container color-container project-border" data-aos="zoom-in">
           <div class="article-container">
             <img src="./images/project-1.png" alt="Project 1" class="project-img">
           </div>
@@ -265,7 +269,7 @@
             <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
           </div>
         </div>
-        <div class="details-container color-container project-border">
+        <div class="details-container color-container project-border" data-aos="zoom-in">
           <div class="article-container">
             <img src="./images/project-1.png" alt="Project 1" class="project-img">
           </div>
@@ -282,7 +286,7 @@
     <section id="contact">
       <h1 class="title">Contact Me</h1>
 
-      <div class="contact-form-container">
+      <div class="contact-form-container" data-aos="fade-in">
         <form onsubmit="sendEmail(); reset(); return false;">
           <h3>Get in touch</h3>
           <input type="text" id="contact-name" placeholder="Your name" required>
@@ -318,6 +322,7 @@
       <p>Copyight &#169; 2022 Divyansh Singh. All rights reserved.</p>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

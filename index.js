@@ -1,4 +1,6 @@
 
+
+  
 // ham nav ka 
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
@@ -40,4 +42,10 @@ function toggleMenu() {
       message => alert(message)
     );
   }
-  
+
+  // SCROLL ANIMATIONSS
+
+
+  AOS.init({
+    duration:1500
+  });
