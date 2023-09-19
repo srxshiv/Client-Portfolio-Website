@@ -60,6 +60,7 @@ body{
 }
 
 
+
 .logo:hover{
   cursor: default;
 }
@@ -238,19 +239,17 @@ section{
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .section__pic-container{
   display: flex;
   height: 400px;
   width: 400px;
-  margin: auto 0;
+  margin: 100px 0;
 }
 
 .profile-pic{
-  /* background-repeat: no-repeat; */
-  justify-self: center;
   height: 350px;
   width: 350px;
   box-shadow: inset 0 0 0 9px rgb(255 255 255 /30%);
@@ -401,11 +400,8 @@ li{
 
 .about-p-text{
   color: white;
-  opacity: 0.75;
-}
-
-.about-p-text:hover{
-  opacity: 1;
+  opacity: 0.9;
+  font-size: large;
 }
 
 .about-containers{
@@ -439,9 +435,7 @@ li{
   flex: 1;
   background:#1F1F1F;
   border-radius: 2rem;
-  border: 1px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  border: #0079FF 1px solid;
 }
 
 .section-container{
@@ -503,7 +497,6 @@ article .icon, h3{
   cursor: default;
 }
 
-
 /* ACCORDIAN WORK HISTORY */
 
 .work-history{
@@ -523,7 +516,7 @@ article .icon, h3{
 }
 
 .experience-history-container:hover{
-  transform: translateY(-0.5rem);
+  transform: scale(103%);
   opacity: 1;
 }
 
@@ -590,7 +583,7 @@ label{
 }
 
 .color-container{
-  border-color:#7f7f7f;
+  border-color:#0079FF;
   background: #1F1F1F;
 }
 
@@ -609,10 +602,6 @@ label{
 .project-title{
   margin: 1rem;
   color: #3795BD;
-}
-
-.project-border{
-  border-image-source: linear-gradient(to left, #B6EADA,#0079FF);
 }
 
 .project-wrap{
@@ -670,7 +659,7 @@ label{
 form{
   display: flex;
   flex-direction: column;
-  padding:  3vw;
+  padding:  3vw 5vw;
   width: 60%;
   max-width: 400px;
   border-radius: 2rem;
@@ -699,6 +688,10 @@ form button{
   border: #7f7f7f 2px solid;
   outline: none;
   cursor: pointer;
+}
+
+form button:hover{
+  color: #FFA41B;
 }
 
 #contact-name:hover{
