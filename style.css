@@ -9,8 +9,18 @@
     margin: 0;
 }
 
+:root{
+  --primary-color: #1F1F1F;
+  --secondary-color: white;
+}
+
+.light-theme{
+  --primary-color: white;
+  --secondary-color: black;
+}
+
 body{
-  background-color: #1F1F1F;
+  background-color: var(--primary-color);
   /* font-family: 'Poppins', sans-serif; */
   /* font-family: 'Fredoka', sans-serif; */
   font-family: 'Oswald', sans-serif;
@@ -23,7 +33,7 @@ body{
 }
 
 .span-p{
-  color: #F2F1F2;
+  color: var(--secondary-color);
 }
 
 .typing-text .span-p{
@@ -33,7 +43,7 @@ body{
 .span-p.text-2::before{
   content: "";
   position: absolute;
-  background-color: #1F1F1F;
+  background-color: var(--primary-color);
   height: 100%;
   top: 0;
   left: 0;
@@ -59,27 +69,16 @@ body{
   width: 300px;
 }
 
-.logo:hover{
-  cursor: default;
-}
-#Divyansh{
-  color: #FEFDFB;
-  font-weight: 700;
-}
-#Singh{
-  font-weight: 300;
-  color: #FEFDFB;
-}
 html{
     scroll-behavior:smooth;
 }
 
 p{
-    color: #FEFDFB;
+    color: var(--secondary-color);
 }
 
 h3{
-  color: white;
+  color: var(--secondary-color);
 }
 
 /* TRANSITION */
@@ -113,7 +112,7 @@ nav{
 }
 
 a{
-  color: #FEFDFB;
+  color: var(--secondary-color);
   text-decoration: none;
   display: block;
   position: relative;
@@ -165,7 +164,7 @@ a:hover::before {
 .hamburger-icon span{
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: var(--secondary-color);
   transition:all 0.3 ease-in-out ;
 }
 
@@ -173,7 +172,7 @@ a:hover::before {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color:#1F1F1F;
+  background-color:var(--primary-color);
   width: fit-content;
   max-height: 0; 
   overflow: hidden;
@@ -185,7 +184,7 @@ a:hover::before {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: white;
+  color: var(--secondary-color);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -275,23 +274,23 @@ section{
 }
 
 .section__text{
-  color: white;
+  color: var(--secondary-color);
   align-self: center;
   text-align: center;
 }
 
 .section__text p{
-  color: white;
+  color: var(--secondary-color);
   font-weight: 600;
 }
 
 .section__text__p1{
-  color: white;
+  color: var(--secondary-color);
   text-align: center;
 }
 
 .section__text__p2{
-  color: white;
+  color: var(--secondary-color);
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
@@ -312,21 +311,19 @@ section{
 
 /* icons */
 
-
 .tooltip .tooltiptext {
   visibility: hidden;
-  background-color: #1F1F1F;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
   margin-top: 30px;
-  margin-left: -12px; 
+  border-radius: 6px;
+  margin-left: -15px; 
   position: absolute;
   opacity: 0;
   transition: opacity 600ms;
   font-size: 1rem;
-  text-shadow: 1rem 1rem 0.8 white;
+  text-shadow: 1rem 1rem 0.8 var(--secondary-color);
 }
 
 .tooltip:hover .tooltiptext {
@@ -341,7 +338,7 @@ section{
 
 .profile-icon{
   padding: 0.4rem;
-  color: white;;
+  color: var(--secondary-color);
 }
 
 .profile-icon:hover{
@@ -376,7 +373,7 @@ section{
 
 .btn-color-1:hover ,.btn-color-2{
   background: #FFA41B;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .btn-color-2:hover{
@@ -384,7 +381,7 @@ section{
 }
 
 .btn-color-1{
-  color: #fff;
+  color: var(--secondary-color);
   background: none;
 }
 
@@ -403,7 +400,7 @@ li{
 }
 
 .about-p-text{
-  color: white;
+  color: var(--secondary-color);
   opacity: 0.9;
   font-size: large;
 }
@@ -437,7 +434,7 @@ li{
   text-align: center;
   padding: 1.5rem;
   flex: 1;
-  background:#1F1F1F;
+  background:var(--primary-color);
   border-radius: 2rem;
   border: #0079FF 1px solid;
 }
@@ -518,12 +515,12 @@ article .icon, h3{
 }
 
 .work-history{
-  color: white;
+  color: var(--secondary-color);
   margin: 4vh;
 }
 .experience-history-container{
   border: #0079FF 2px solid;
-  color: white;
+  color: var(--secondary-color);
   margin: 2rem;
   padding: 2rem;
   line-height: 1.8;
@@ -589,7 +586,7 @@ label{
 
 .color-container{
   border-color:#0079FF;
-  background: #1F1F1F;
+  background: var(--primary-color);
 }
 
 .color-container:hover{
@@ -628,9 +625,9 @@ label{
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: #1F1F1F 0.1rem solid;
-  border-color: #1F1F1F;
-  background: #1F1F1F;
+  border: var(--primary-color)0.1rem solid;
+  border-color: var(--primary-color);
+  background: var(--primary-color);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -681,7 +678,7 @@ form input, form textarea{
   padding: 20px;
   outline: none;
   border-radius: 2rem;
-  background-color: #f5f5f5;
+  background-color: var(--secondary-color);
   font-size: 16px;
   border: #7f7f7f 2px solid;
 }
