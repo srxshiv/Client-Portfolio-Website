@@ -514,7 +514,7 @@ article .icon, h3{
         max-width: max-content;
         overflow: hidden;
         transform: translateY(20px);
-        transition: all 800ms ease-in-out; 
+        transition: all 800ms cubic-bezier(0, 1, 0, 1); 
 }
 
 .work-history{
@@ -577,11 +577,10 @@ h5{
         transition: all 800ms ease-in-out;
 }
 
-
-
 label{
   cursor: pointer;
 }
+
 /* PROJECTSS */
 
 #projects{
