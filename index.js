@@ -49,3 +49,6 @@ function toggleMenu() {
   AOS.init({
     duration:1000
   });
+
+
+  // accordion animation
