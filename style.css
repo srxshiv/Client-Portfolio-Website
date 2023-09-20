@@ -12,11 +12,17 @@
 :root{
   --primary-color: #1F1F1F;
   --secondary-color: white;
+  --third-color: #FFB84C;
+  --hover-btn-color: #FFBB5C;
+  --default-btn: #EE9322;
 }
 
 .light-theme{
   --primary-color: white;
-  --secondary-color: black;
+  --secondary-color: #1F1F1F;
+  --third-color: #1450A3;
+  --hover-btn-color: #279EFF;
+  --default-btn: #337CCF;
 }
 
 body{
@@ -296,7 +302,7 @@ section{
 }
 
 .title{
-  color: #FFB84C;
+  color: var(--third-color);
   font-size: 3rem;
   text-align: center;
   padding-bottom: 4vh;
@@ -372,12 +378,12 @@ section{
 }
 
 .btn-color-1:hover ,.btn-color-2{
-  background: #FFA41B;
+  background: var(--default-btn);
   color: var(--secondary-color);
 }
 
 .btn-color-2:hover{
-  background: #FFBB5C;
+  background: var(--hover-btn-color);
 }
 
 .btn-color-1{
@@ -386,7 +392,7 @@ section{
 }
 
 .btn-color-1:hover{
-border: #1F1F1F 0.1rem solid;
+border: var(--primary-color) 0.1rem solid;
 }
 
 /* ABOUT ME */
@@ -463,7 +469,7 @@ li{
 }
 
 .experience-sub-title{
-  color:#3795BD;
+  color: var(--third-color);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -678,7 +684,7 @@ form input, form textarea{
   padding: 20px;
   outline: none;
   border-radius: 2rem;
-  background-color: var(--secondary-color);
+  background-color: white;
   font-size: 16px;
   border: #7f7f7f 2px solid;
 }
@@ -694,7 +700,7 @@ form button{
 }
 
 form button:hover{
-  color: #FFA41B;
+  color: var(--third-color);
 }
 
 #contact-name:hover{

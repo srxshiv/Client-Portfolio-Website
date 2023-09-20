@@ -53,7 +53,7 @@ function toggleMenu() {
 
   // light theme dark theme
 
-  const theme = document.querySelector("#picon");
+  const theme = document.querySelector(".tooltip");
   const tooltip= document.querySelector(".tooltiptext")
   const dslogo=document.querySelector(".logo-img")
 

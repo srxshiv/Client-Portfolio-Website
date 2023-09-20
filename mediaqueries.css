@@ -88,7 +88,7 @@
       width: 200px;
     }
     .tooltip{
-      margin-right: 72px;
+      display: none;
     }
     .nav-links {
       flex-direction: column;
