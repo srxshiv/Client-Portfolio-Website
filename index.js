@@ -1,6 +1,21 @@
 
+// open linkss
 
-  
+function openLink1() {
+  window.open('https://devpost.com/software/careergpt', '_blank');
+}
+function openLink2() {
+  window.open('https://github.com/divyanshrm/CareerGPT-Shellhacks', '_blank');
+}
+function openLink3() {
+  window.open('https://github.com/divyanshrm/myReddit', '_blank');
+}
+function openLink4() {
+  window.open('https://github.com/divyanshrm/Jobply', '_blank');
+}
+
+
+
 // ham nav ka 
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
