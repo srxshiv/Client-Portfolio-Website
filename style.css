@@ -396,7 +396,7 @@ border: var(--primary-color) 0.1rem solid;
 }
 
 /* ABOUT ME */
-li{
+.details-container li{
   list-style-type: none;
 }
 
@@ -553,6 +553,10 @@ h5{
 
 .exp-content li{
   padding: 0.5rem;
+}
+
+.exp-content ul li::before{
+    content: "+ ";
 }
 
 #ca,#cb,#cc,#cd{

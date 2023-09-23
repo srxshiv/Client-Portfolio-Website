@@ -19,7 +19,7 @@ function toggleMenu() {
       text.textContent="Data Scientist"
     }, 4000);
     setTimeout(()=>{
-      text.textContent="Web Developer"
+      text.textContent="FullStack Developer"
     }, 8000);
   }
 
