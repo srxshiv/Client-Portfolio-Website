@@ -441,7 +441,6 @@ li{
   padding: 1.5rem;
   flex: 1;
   background:var(--primary-color);
-  border-radius: 2rem;
   border: #0079FF 1px solid;
 }
 
@@ -609,12 +608,17 @@ label{
 
 .project-title{
   margin: 1rem;
-  color: #3795BD;
+  color: #EE9322;
 }
 
 .project-wrap{
   display: flex;
   flex-wrap: wrap;
+}
+
+.project-border{
+  border-radius: none;
+  border: #1450A3 2px solid;
 }
 
 

@@ -61,15 +61,11 @@ function toggleMenu() {
    document.body.classList.toggle("light-theme");
 
    if(document.body.classList.contains("light-theme")){
-    theme.classList.remove("fa-solid");
-    theme.classList.add("fa-regular");
     theme.style.color="black";
     tooltip.innerHTML="NOX!";
     tooltip.style.margin="30px 0 0 -6px";
     dslogo.src="./images/lightlogo.png"
    }else{
-    theme.classList.remove("fa-regular");
-    theme.classList.add("fa-solid");
     theme.style.color="white";
     tooltip.innerHTML="LUMOS!";
     tooltip.style.margin="30px 0 0 -15px";
