@@ -27,21 +27,21 @@ function toggleMenu() {
   setInterval(textLoad,12000);
 
   // contact form ka
-
-  function sendEmail(){
-    
-      Email.send({
-        Host : "smtp.gmail.com",
-        Username : "divyanshucs127@gmail.com",
-        Password : "Vaishnavi@1234",
-        To : 'divyanshucs127@gmail.com',
-        From : document.getElementById.apply("contact-email").value,
-        Subject : "Website Contact Form Inquiry",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
+  function sendMail(){
+    Email.send({
+      SecureToken : "5daf0876-669f-49b5-b11e-e370e9cce41e",
+      To : 'divyanshucs127@gmail.com',
+      From : document.querySelector("#contact-email").value,
+      Subject : "New Enquiry from Website",
+      Body : "Name : " + document.querySelector("#contact-name")
+           + "<br> Email : "+ document.querySelector("#contact-email")
+           + "<br> Phone no. : "+ document.querySelector("#contact-phone")
+           + "<br> Message: " +document.querySelector("#contact-msg")
+  }).then(
+    message=> alert("Message Sent Succesfully")
+  )
   }
+
 
   // SCROLL ANIMATIONSS
 
