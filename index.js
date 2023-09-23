@@ -29,16 +29,20 @@ function toggleMenu() {
   // contact form ka
   function sendMail(){
     Email.send({
-      SecureToken : "5daf0876-669f-49b5-b11e-e370e9cce41e",
-      To : 'divyanshucs127@gmail.com',
+      // SecureToken: "c93a4673-7dcd-4b76-8790-05f1a3fe51e4",
+      Host: "smtp.elasticemail.com",
+      Username: "divyanshucs127@gmail.com",
+      Password: "BF9E3E1787446468AAA4EE09E5652058AC00",
+      To : "divyanshucs127@gmail.com",
       From : document.querySelector("#contact-email").value,
       Subject : "New Enquiry from Website",
-      Body : "Name : " + document.querySelector("#contact-name")
-           + "<br> Email : "+ document.querySelector("#contact-email")
-           + "<br> Phone no. : "+ document.querySelector("#contact-phone")
-           + "<br> Message: " +document.querySelector("#contact-msg")
+      Body : "Name : " + document.querySelector("#contact-name").value
+           + "<br> Email : "+ document.querySelector("#contact-email").value
+           + "<br> Phone no. : "+ document.querySelector("#contact-phone").value
+           + "<br> Message: " +document.querySelector("#contact-msg").value
   }).then(
-    message=> alert("Message Sent Succesfully")
+    message=> alert("Message Sent Succesfully"),
+    console.log("work")
   )
   }
 
