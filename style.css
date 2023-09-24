@@ -508,7 +508,12 @@ article .icon, h3{
 /* ACCORDIAN WORK HISTORY */
 
 
-
+.exp-pic{
+  margin-top: 4vh;
+  padding: 0;
+  max-width: 4vw;
+  height: auto;
+}
 .exp-content{
   margin: 0 18px;
        height: auto;
