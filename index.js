@@ -28,7 +28,9 @@ function openLink6() {
 function openLink7() {
   window.open('https://github.com/divyanshrm/Chatbot_from_Reddit', '_blank');
 }
-
+function openLink8() {
+  window.open('https://ieeexplore.ieee.org/document/9375766', '_blank');
+}
 
 
 

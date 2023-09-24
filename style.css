@@ -514,6 +514,8 @@ article .icon, h3{
   max-width: 4rem;
   height: auto;
 }
+
+
 .exp-content{
   margin: 0 18px;
        height: auto;
@@ -564,7 +566,7 @@ h5{
     content: "+ ";
 }
 
-#ca,#cb,#cc,#cd{
+#ca,#cb,#cc,#cd,#ce{
   display: none;
 }
 
@@ -584,6 +586,11 @@ h5{
 }
 
 #cd:checked ~ .exp-content{
+  max-height: 700px;
+        transition: all 800ms ease-in-out;
+}
+
+#ce:checked ~ .exp-content{
   max-height: 700px;
         transition: all 800ms ease-in-out;
 }
