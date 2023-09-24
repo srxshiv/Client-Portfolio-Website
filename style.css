@@ -623,6 +623,7 @@ label{
 .project-border{
   border-radius: none;
   border: #1450A3 2px solid;
+  min-width: 200px;
 }
 
 

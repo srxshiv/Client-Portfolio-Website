@@ -13,6 +13,16 @@ function openLink3() {
 function openLink4() {
   window.open('https://github.com/divyanshrm/Jobply', '_blank');
 }
+function openLink5() {
+  window.open('https://github.com/divyanshrm/Everything-AI-Proctor', '_blank');
+}
+function openLink6() {
+  window.open('https://github.com/divyanshrm/Polyth-Net-Classification-of-Polythene-Bags-Using-Deep-Learning', '_blank');
+}
+function openLink7() {
+  window.open('https://github.com/divyanshrm/Chatbot_from_Reddit', '_blank');
+}
+
 
 
 
@@ -34,7 +44,7 @@ function toggleMenu() {
       text.textContent="Data Scientist"
     }, 4000);
     setTimeout(()=>{
-      text.textContent="FullStack Developer"
+      text.textContent="Full Stack Developer"
     }, 8000);
   }
 
