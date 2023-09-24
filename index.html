@@ -342,12 +342,12 @@
       <h1 class="title">Contact Me</h1>
 
       <div class="contact-form-container" data-aos="fade-in">
-        <form onsubmit="sendEmail(); reset(); return false;">
+        <form action="https://formspree.io/f/xleypzkk" method="post">
           <h3>Get in touch</h3>
-          <input type="text" id="contact-name" placeholder="Your name" required>
-          <input type="email" id="contact-email" placeholder="Email id" required>
-          <input type="text" id="contact-phone" placeholder="Phone no.">
-          <textarea id="contact-msg" rows="4" placeholder="How may I help you?"></textarea>
+          <input type="text" id="contact-name" placeholder="Your name" name="Name" required>
+          <input type="email" id="contact-email" placeholder="Email id" name="email" required>
+          <input type="text" id="contact-phone" placeholder="Phone no." name="phone">
+          <textarea id="contact-msg" rows="4" placeholder="How may I help you?" name="message"></textarea>
           <button type="submit" id="contact-submit" onclick="sendMail()">Send</button>
         </form>
       </div>
