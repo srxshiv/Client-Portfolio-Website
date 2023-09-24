@@ -1,6 +1,12 @@
 
 // open linkss
 
+function openGithub(){
+  window.open('https://github.com/divyanshrm', '_blank');
+}
+function openLinkedin(){
+  window.open('https://linkedin.com/in/divyansh-singh-604', '_blank');
+}
 function openLink1() {
   window.open('https://devpost.com/software/careergpt', '_blank');
 }
