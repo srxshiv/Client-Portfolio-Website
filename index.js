@@ -1,38 +1,30 @@
+//links open
 
-// open linkss
-
-function openGithub(){
-  window.open('https://github.com/divyanshrm', '_blank');
-}
-function openLinkedin(){
-  window.open('https://linkedin.com/in/divyansh-singh-604', '_blank');
-}
-function openLink1() {
-  window.open('https://devpost.com/software/careergpt', '_blank');
-}
-function openLink2() {
-  window.open('https://github.com/divyanshrm/CareerGPT-Shellhacks', '_blank');
-}
-function openLink3() {
-  window.open('https://github.com/divyanshrm/myReddit', '_blank');
-}
-function openLink4() {
-  window.open('https://github.com/divyanshrm/Jobply', '_blank');
-}
-function openLink5() {
-  window.open('https://github.com/divyanshrm/Everything-AI-Proctor', '_blank');
-}
-function openLink6() {
-  window.open('https://github.com/divyanshrm/Polyth-Net-Classification-of-Polythene-Bags-Using-Deep-Learning', '_blank');
-}
-function openLink7() {
-  window.open('https://github.com/divyanshrm/Chatbot_from_Reddit', '_blank');
-}
-function openLink8() {
-  window.open('https://ieeexplore.ieee.org/document/9375766', '_blank');
+function openLinks(url) {
+  window.open(url, '_blank');
 }
 
+const links = [
+  'https://github.com/divyanshrm',
+  'https://linkedin.com/in/divyansh-singh-604',
+  'https://devpost.com/software/careergpt',
+  'https://github.com/divyanshrm/CareerGPT-Shellhacks',
+  'https://github.com/divyanshrm/myReddit',
+  'https://github.com/divyanshrm/Jobply',
+  'https://github.com/divyanshrm/Everything-AI-Proctor',
+  'https://github.com/divyanshrm/Polyth-Net-Classification-of-Polythene-Bags-Using-Deep-Learning',
+  'https://github.com/divyanshrm/Chatbot_from_Reddit',
+  'https://ieeexplore.ieee.org/document/9375766'
+];
 
+function openLink(index) {
+  const url = links[index];
+  if (url) {
+    openLinks(url);
+  } else {
+    console.error('Link at index ${index} does not exist.');
+  }
+}
 
 // ham nav ka 
 function toggleMenu() {
